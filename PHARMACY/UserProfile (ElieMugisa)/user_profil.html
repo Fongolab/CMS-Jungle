@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link
+      rel="stylesheet"
+      href="./ouput_users/style_users.css"
+    />
+    <title>Users</title>
+  </head>
+  <body class="">
+    <!-- main container -->
+    <div
+      id="container"
+      class="grid grid-cols-6 relative"
+    >
+      <!-- ***** ASIDE ******* -->
+      <aside
+        id="aside"
+        class="fixed py-4 h-screen bg-my_black hidden md:block"
+      >
+        <!-- profil user box -->
+        <div
+          id="user1_wrapp"
+          class="flex items-center gap-2 p-2"
+        >
+          <div class="box_avatar h-10 w-10 rounded-full bg-white"></div>
+          <h1 class="text-teal-50">Users</h1>
+        </div>
+
+        <!-- menu -->
+        <div
+          id="MENU"
+          class="p-2 mt-4"
+        >
+          <ul>
+            <div class="dash flex gap-4 p-2 rounded-md">
+              <span class=""> 
+                <i class="fa-brands fa-slack text-white"></i>
+              </span>
+              <li class="text-white">Dashboard</li>
+            </div>
+
+            <div class="dash flex gap-5 p-2 rounded-md">
+              <span class=""> 
+                <i class="fa-brands fa-slack text-white"></i>
+              </span>
+              <li class="text-white">Assignments</li>
+            </div>
+
+            <div class="dash bg-blue-600 flex gap-3 p-2 rounded-md">
+              <span class=""> 
+                <i class="fa-solid fa-users text-white"></i>
+              </span>
+              <li class="text-white">Users</li>
+            </div>
+          </ul>
+        </div>
+      </aside>
+
+
+      <!-- ******* SECTION PRINCIPALE ******** -->
+      <main
+        id="content"
+        class="bg-slate-100 pb-4 col-start-1 col-end-7 md:col-start-2 md:pl-12 md:h-screen"
+      >
+        <nav class="nav bg-white px-4 flex justify-between h-10">
+          <!-- Tools -->
+          <div class="mt-2 hamburger">
+            <span class="hamburger-top"></span>
+            <span class="hamburger-middle"></span>
+            <span class="hamburger-bottom"></span>
+          </div>
+
+          <div
+            id="tools"
+            class="tools justify-end flex items-center"
+          >
+            <!-- first tools -->
+            <div class="flex gap-4 pl-3 border-l-2 border-slate-200">
+              <div
+                class="btn-new flex items-center justify-center h-7 w-16 bg-green-500 rounded-full px-1 gap-1"
+              >
+                <span class="">
+                  <i class="fa-sharp fa-solid fa-circle-plus text-white"></i>
+                </span>
+                <span class="text-white text-xs w-1/2">
+                  New
+                </span>
+              </div>
+              <div class="box h-7 w-7 grid place-content-center rounded-full bg-slate-200">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+              <div class="box h-7 w-7 rounded-full bg-slate-200"></div>
+              <!-- <div class="box h-7 w-7 rounded-full bg-slate-200"></div>
+              <div class="box h-7 w-7 rounded-full bg-slate-200"></div> -->
+            </div>
+          </div>
+        </nav>
+
+
+        <!-- BACK & NEXT PAGES -->
+        <div class="flex p-2 px-4 items-center justify-between">
+            <!-- links -->
+            <div class="back-link flex items-center gap-2 cursor-default">
+              <span class="opacity-60">
+                <i class="fa-solid fa-caret-left"></i>
+              </span>
+              <a href="#" class="text-xs opacity-60">Back pages</a>
+            </div>
+            <div class="next-link flex items-center gap-2 cursor-default">
+              <p class="text-xs opacity-60">Next pages</p>
+              <span class="opacity-60">
+                <i class="fa-solid fa-caret-right"></i>
+              </span>
+            </div>
+          </div>
+
+          <!-- BLOCK MAIN -->
+          <section class="section1 space-y-6 gap-4 justify-evenly p-4 md:space-y-0 md:grid md:grid-cols-2 lg:grid-cols-3 lg:pl-5">
+                <div class="bloc bloc1 flex justify-between items-center p-4 bg-secondary rounded-md">
+                    <div class="icon h-14 w-14 rounded-md grid place-content-center">
+                      <i class="fa-sharp fa-solid fa-house-chimney text-white text-5xl "></i>
+                    </div>
+                    <div class="flex justify-end flex-col items-end">
+                        <p class="text-xs text-white opacity-70">
+                            lorem ispum
+                        </p>
+                        <span class="text-xl text-white font-bolg">
+                            12
+                        </span>
+                    </div>
+                </div>
+                <div class="bloc bloc2 flex justify-between items-center p-4 bg-primary rounded-md">
+                    <div class="icon h-14 w-14 rounded-md grid place-content-center">
+                      <i class="fa-sharp fa-solid fa-house-chimney text-white text-5xl "></i>
+                    </div>
+                    <div class=" flex justify-end flex-col items-end">
+                        <p class="text-xs text-white opacity-70">
+                            lorem ispum
+                        </p>
+                        <span class="text-xl text-white font-bolg">
+                            46
+                        </span>
+                    </div>
+                </div>
+                <div class="bloc bloc3 flex justify-between items-center p-4 bg-success rounded-md">
+                    <div class="icon h-14 w-14 rounded-m grid place-content-center">
+                      <i class="fa-sharp fa-solid fa-house-chimney text-white text-5xl "></i>
+                    </div>
+                    <div class=" flex justify-end flex-col items-end">
+                        <p class="text-xs text-white opacity-70">
+                            lorem ispum
+                        </p>
+                        <span class="text-xl text-white font-bolg">
+                            54
+                        </span>
+                    </div>
+                </div>
+          </section>
+
+          <!-- Section fomulaire -->
+          <section class="rounded-md  p-4 pt-2 lg:p-5">
+            <div  class="bg-white shadow-md text-xs rounded-t-md ">
+              <div id="fishe-form" class="py-1 px-2 opacity-80 rounded-t-md">
+                Lorem lorem
+              </div>
+
+              <!-- header -->
+              <div class="flex p-2 mt-2 items-center justify-between">
+
+                <div class=" flex gap-1 items-center">
+                  <label for=""></label>
+                  <input id="counter" type="number" class=" w-10 p-1" name="counter" title="number">
+                  <p class="text-xs opacity-70">
+                    record per pages
+                  </p>
+                </div>
+
+                <div class="flex gap-1 items-center">
+                  <label for="search" class="text-xs opacity-70">Search:</label>
+                  <input id="search" type="search" class="p-1 outline-none" name="search">
+                </div>
+              </div>
+
+              <!-- TABLE -->
+
+              <form action="" class=" p-2">
+
+                <table class="border-collaps w-full">
+                  <!-- ****** -->
+                  <tr >
+                    <th class="border border-stone-300 border-t-stone-200 px-1 py-1 text-start w-ten-Pourcent relative md:px-2">
+                      <span class="font-extrabold">#</span>
+                      <div class="absolute right-1 bottom-1">
+                        <div class="flex flex-col justify-center items-center ">
+                          <i class="fa-solid fa-sort"></i>
+                        </div>
+                      </div>
+                    </th>
+                    <th class="border border-stone-300 border-t-stone-200  px-2 py-1 text-start w-sixty-Pourcent relative">
+                      Client
+                      <div class="absolute right-1 bottom-1">
+                        <div class="flex flex-col justify-center -space-y-2 items-center">
+                          <i class="fa-solid fa-sort"></i>
+                        </div>
+                      </div>
+                    </th>
+                    <th class="border border-stone-300 border-t-stone-200 px-2 py-1 text-start w-thirty-Pourcent">
+                      Action
+                    </th>
+                  </tr>
+                  <!-- ****** -->
+                  <tr>
+                    <td class="border border-stone-300 p-2">0073</td>
+                    <td class="border border-stone-300 p-2">
+                      Client1 names
+                    </td>
+                    <td class="p-2 border border-stone-300">
+                      <a href="user_detail_profil.html" class="rounded-md bg-primary text-white px-3 py-1 text-xs md:px-4 lg:px-6 hover:opacity-70">Detail</a>
+                    </td>
+                  </tr>
+                  <!-- ****** -->
+                  <tr>
+                    <td class="border border-stone-300 p-2">0074</td>
+                    <td class="border border-stone-300 p-2">
+                      Client2 names
+                    </td>
+                    <td class="p-2 border border-stone-300">
+                      <a href="user_detail_profil.html" class="rounded-md bg-primary text-white px-3 py-1 text-xs md:px-4 lg:px-6 hover:opacity-70">Detail</a>
+                    </td>
+                  </tr>
+                  <!-- ****** -->
+                  <tr>
+                    <td class="border border-stone-300 p-2">0075</td>
+                    <td class="border border-stone-300 p-2">
+                      Client3 names
+                    </td>
+                    <td class="p-2 border border-stone-300">
+                      <a href="user_detail_profil.html" class="rounded-md bg-primary text-white px-3 py-1 text-xs md:px-4 lg:px-6 hover:opacity-70">Detail</a>
+                    </td>
+                  </tr>
+                </table>
+
+              </form>
+
+              <div class="flex items-center justify-between p-2 ">
+                <div class="">
+                  <p class="text-xs ">Showing 31 to 31 of 31 entries</p>
+                </div>
+                <table class="border-collapse cursor-pointer">
+                  <tr class="border border-stone-300">
+                    <td class="px-2 py-1 border-stone-300">Previous</td>
+                    <td class="px-2 py-1 border border-stone-300">1</td>
+                    <td class="px-2 py-1 border border-stone-300">2</td>
+                    <td class="px-2 py-1 border border-stone-300">3</td>
+                    <td class="px-2 py-1 border border-stone-300 bg-stone-200">4</td>
+                    <td class="px-2 py-1 border border-stone-300">Next</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+
+          </section>
+        
+      </main>
+
+
+
+      <!--  npx tailwindcss -i ./input_Detail_css/input.css -o ./ouput_users/style_users.css 
+--watch -->
+  </body>
+</html>

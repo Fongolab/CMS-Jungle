@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="./output_detail/style_user_detail.css"
+    />
+    <title>User_Detail_profil</title>
+  </head>
+  <body class="">
+    <!-- main container -->
+    <div
+      id="container"
+      class="grid grid-cols-6 relative"
+    >
+      <!-- ***** ASIDE ******* -->
+      <aside
+        id="aside"
+        class="fixed py-4 h-screen bg-my_black hidden md:block"
+      >
+        <!-- profil user box -->
+        <div
+          id="user1_wrapp"
+          class="flex items-center gap-2 p-2"
+        >
+          <div class="box_avatar h-10 w-10 rounded-full bg-white"></div>
+          <h1 class="text-teal-50">User1 User1</h1>
+        </div>
+
+        <!-- menu -->
+        <div
+          id="MENU"
+          class="p-2 mt-4"
+        >
+          <ul>
+            <div class="dash flex gap-4 p-2 rounded-md">
+              <span class="">
+                <i class="fa-brands fa-slack text-white"></i>
+              </span>
+              <li class="text-white">Dashboard</li>
+            </div>
+
+            <div class="dash flex gap-5 p-2 rounded-md">
+              <span class="">
+                <i class="fa-brands fa-slack text-white"></i>
+              </span>
+              <li class="text-white">Assignments</li>
+            </div>
+
+            <div class="dash bg-blue-600 flex gap-3 p-2 rounded-md">
+              <span class="">
+                <i class="fa-solid fa-users text-white"></i>
+              </span>
+              <li class="text-white">Users</li>
+            </div>
+          </ul>
+        </div>
+      </aside>
+
+      <!-- ******* SECTION PRINCIPALE ******** -->
+      <main
+        id="content"
+        class="bg-slate-100 pb-4 col-start-1 col-end-7 md:col-start-2 md:pl-12"
+      >
+        <nav class="nav bg-white px-4 flex justify-between h-10">
+          <!-- Tools -->
+          <div class="mt-2 hamburger">
+            <span class="hamburger-top"></span>
+            <span class="hamburger-middle"></span>
+            <span class="hamburger-bottom"></span>
+          </div>
+
+          <div
+            id="tools"
+            class="tools justify-end flex items-center"
+          >
+            <!-- first tools -->
+            <div class="flex gap-4 pl-3 border-l-2 border-slate-200">
+              <div
+                class="btn-new flex items-center justify-center h-7 w-16 bg-green-500 rounded-full px-1 gap-1"
+              >
+                <span class="">
+                  <i class="fa-sharp fa-solid fa-circle-plus text-white"></i>
+                </span>
+                <span class="text-white text-xs w-1/2"> New </span>
+              </div>
+              <div
+                class="box h-7 w-7 grid place-content-center rounded-full bg-slate-200"
+              >
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+              <div class="box h-7 w-7 rounded-full bg-slate-200"></div>
+              <!-- <div class="box h-7 w-7 rounded-full bg-slate-200"></div>
+              <div class="box h-7 w-7 rounded-full bg-slate-200"></div> -->
+            </div>
+          </div>
+        </nav>
+
+        <!-- CONTENT BACK && NEXT PAGES -->
+        <div class="flex p-2 px-4 items-center justify-between">
+          <!-- links -->
+          <div class="back-link flex items-center gap-2 cursor-default">
+            <span class="opacity-60">
+              <i class="fa-solid fa-caret-left"></i>
+            </span>
+            <a
+              href="user_profil.html"
+              class="text-xs opacity-60"
+              >Back pages</a
+            >
+          </div>
+          <div class="next-link flex items-center gap-2 cursor-default">
+            <!-- <p class="text-xs opacity-60">Next pages</p>
+            <span class="opacity-60">></span> -->
+          </div>
+        </div>
+
+        <!-- MAIN BLOCKS -->
+        <div
+          class="main-blocks gap-4 px-4 flex flex-col space-y-4 lg:flex-row lg:space-y-0"
+        >
+          <!-- detailled profile -->
+          <div
+            id="article1"
+            class="block1 py-4 flex flex-col space-y-4 justify-center items-center rounded-md bg-white lg:h-vh110 w-full lg:w-1/3"
+          >
+            <!-- pic -->
+            <div class="profile flex justify-center items-center">
+              <div
+                class="img overflow-hidden h-48 w-48 mb-8 bg-slate-200 rounded-full flex justify-center items-end lg:mb-0 lg:h-20 lg:w-20"
+              >
+                <i
+                  class="fa-solid fa-user w-full text-slate-600 text-7xl text-center"
+                ></i>
+              </div>
+            </div>
+            <!-- detail -->
+            <div
+              class="text mb-8 flex flex-col justify-center items-center text-center space-y-2 lg:mb-0"
+            >
+              <h1 class="font-bold text-xl">Leonard Campbel</h1>
+              <p class="text-xs opacity-80">Applied today</p>
+
+              <div class="icons flex gap-2 pt-2">
+                <div
+                  class="ico flex justify-center items-center h-6 w-6 rounded-full bg-slate-200"
+                >
+                  <i class="fa-solid fa-envelope text-xs opacity-90"></i>
+                </div>
+                <div
+                  class="ico flex justify-center items-center h-6 w-6 rounded-full bg-slate-200"
+                >
+                  <i class="fa-solid fa-briefcase opacity-90 text-xs"></i>
+                </div>
+                <div
+                  class="ico flex justify-center items-center h-6 w-6 rounded-full bg-slate-200"
+                >
+                  <i class="fa-solid fa-phone text-xs opacity-90"></i>
+                </div>
+              </div>
+            </div>
+
+            <!-- ********* -->
+            <div
+              class="p-2 flex justify-evenly border-y-2 w-full border-slate-100"
+            >
+              <div
+                class="ico-like h-6 w-6 flex justify-center items-center rounded-full border-2 border-slate-300"
+              >
+                <i class="fa-regular fa-thumbs-down text-sm text-slate-600"></i>
+              </div>
+              <div
+                class="h-6 w-1/4 rounded-full bg-orange-400 text-xs p-2 gap-2 flex justify-center items-center"
+              >
+                Rating
+                <i class="fa-solid text-[0.8rem] fa-caret-left -rotate-90"></i>
+              </div>
+              <div
+                class="h-6 w-5/12 text-white rounded-full bg-green-500 text-xs p-2 gap-2 flex justify-center items-center"
+              >
+                Advance
+                <i
+                  class="fa-solid text-white text-[0.8rem] fa-caret-left -rotate-90"
+                ></i>
+              </div>
+            </div>
+
+            <!-- ********* -->
+            <div class="w-full px-4">
+              <span class="text-xs text-slate-600"> APPLIED JOBS </span>
+              <div class="p-2 px-4 bg-slate-200 rounded-md mt-2">
+                <p class="font-semibold text-xs mb-1">
+                  Senior Product Designer
+                </p>
+                <p class="opacity-70 text-xs">Full time . Bujumbura/BURUNDI</p>
+              </div>
+            </div>
+
+            <!-- ***** -->
+            <div class="w-full px-4 mx-4">
+              <div
+                class="p-4 border-2 border-dashed border-slate-200 rounded-md"
+              >
+                <div class="text flex justify-between items-center">
+                  <p class="text-xs font-semibold">Status</p>
+                  <div class="flex items-center gap-2">
+                    <span class="h-2 w-2 rounded-full bg-orange-500"></span>
+                    <p class="text-xs text-slate-600">New Apllied</p>
+                  </div>
+                </div>
+                <div class="flex pt-2 gap-1">
+                  <div
+                    class="w-1/5 py-1 rounded-l-full rounded-sm text-sm grid place-content-center bg-orange-500"
+                  >
+                    1
+                  </div>
+                  <div
+                    class="w-1/5 py-1 bg-slate-200 grid place-content-center rounded-sm text-sm"
+                  >
+                    2
+                  </div>
+                  <div
+                    class="w-1/5 py-1 bg-slate-200 grid place-content-center rounded-sm text-sm"
+                  >
+                    3
+                  </div>
+                  <div
+                    class="w-1/5 py-1 bg-slate-200 grid place-content-center rounded-sm text-sm"
+                  >
+                    4
+                  </div>
+                  <div
+                    id="content_two"
+                    class="w-1/5 py-1 bg-slate-200 grid rounded-r-full rounded-sm place-content-center text-sm"
+                  ></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ************ -->
+            <div class="p-4 pb-0 w-full border-t-2 border-slate-100">
+              <h2 class="text-base">Contact Details</h2>
+              <!-- ----------------- -->
+              <div class="space-y-4 mt-2">
+                <div class="bloc flex items-center gap-2">
+                  <div
+                    class="ico h-8 w-8 rounded-full bg-slate-200 grid place-content-center"
+                  >
+                    <i class="fa-solid fa-envelope opacity-90"></i>
+                  </div>
+                  <div class="text">
+                    <p class="text-xs text-slate-700">Email</p>
+                    <p class="text-xs text-slate-500">username@gmail.com</p>
+                  </div>
+                </div>
+                <div class="bloc flex items-center gap-2">
+                  <div
+                    class="ico h-8 w-8 rounded-full bg-slate-200 grid place-content-center"
+                  >
+                    <i class="fa-solid fa-phone opacity-90"></i>
+                  </div>
+                  <div class="text">
+                    <p class="text-xs text-slate-700">Phone</p>
+                    <p class="text-xs text-slate-500">+257 00000000</p>
+                  </div>
+                </div>
+                <div class="bloc flex items-center gap-2">
+                  <div
+                    class="ico h-8 w-8 rounded-full bg-slate-200 grid place-content-center"
+                  >
+                    <i class="fa-solid fa-location-dot opacity-90"></i>
+                  </div>
+                  <div class="text">
+                    <p class="text-xs text-slate-700">Adress</p>
+                    <p class="text-xs text-slate-500">Bujumbura/BURUNDI</p>
+                  </div>
+                </div>
+                <div class="bloc flex items-center gap-2">
+                  <div
+                    class="ico h-8 w-8 rounded-full bg-slate-200 grid place-content-center"
+                  >
+                    <i class="fa-brands fa-skype"></i>
+                  </div>
+                  <div class="text">
+                    <p class="text-xs text-slate-700">Skype</p>
+                    <p class="text-xs text-slate-500">@username</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- main content two -->
+          <div class="block2 rounded-md bg-white w-full lg:w-2/3">
+            <!-- header content -->
+            <div
+              id="header-main-content2"
+              class="head flex justify-center items-center w-full h-12 lg:px-6"
+            >
+              <!-- Menu -->
+              <div
+                class="bloc-menu flex h-full justify-evenly items-center w-full"
+              >
+                <div
+                  id="menu1"
+                  class="text-xs h-full px-1 text-center cursor-pointer flex justify-center items-center lg:px-4"
+                >
+                  Canditate Profile
+                </div>
+                <div
+                  id="menu"
+                  class="text-xs h-full px-1 text-center cursor-pointer flex justify-center items-center lg:px-4"
+                >
+                  Messages
+                </div>
+                <div
+                  id="menu"
+                  class="text-xs h-full px-1 text-center cursor-pointer flex justify-center items-center lg:px-4"
+                >
+                  Comments
+                </div>
+                <div
+                  id="menu"
+                  class="text-xs h-full px-1 cursor-pointer text-center flex justify-center items-center lg:px-4"
+                >
+                  Interviews
+                </div>
+                <div
+                  id="menu"
+                  class="text-xs h-full px-1 cursor-pointer text-center flex justify-center items-center lg:px-4"
+                >
+                  Timelines
+                </div>
+              </div>
+            </div>
+
+            <!-- ******** -->
+            <div
+              id="prof-det-header"
+              class="flex gap-2 px-12 pt-2 bg-filtered_black"
+            >
+              <div
+                class="item px-4 py-2 flex justify-center items-center rounded-t-md cursor-pointer bg-white text-xs"
+              >
+                Profile Details
+              </div>
+              <div
+                class="item px-4 py-2 flex justify-center items-center rounded-t-md cursor-pointer bg-slate-200 text-xs"
+              >
+                Resume
+              </div>
+            </div>
+
+            <!-- **** Block Text ***** -->
+            <div class="p-4 pb-0">
+              <!-- Titre -->
+              <div class="title w-full text-base font-semibold p-2">
+                Personal Details
+              </div>
+              <div
+                id="personal-detail"
+                class="flex gap-2 pb-4"
+              >
+                <div class="text-xs p-2 space-y-8 w-1/2">
+                  <div class="space-y-1">
+                    <p class="text-xs opacity-70">First Name</p>
+                    <p class="text-xs">Leonard</p>
+                  </div>
+
+                  <div class="space-y-1">
+                    <p class="text-xs opacity-70">Gender</p>
+                    <p class="text-xs">Male</p>
+                  </div>
+                </div>
+
+                <div class="text-xs p-2 space-y-8 w-1/2">
+                  <div class="space-y-1">
+                    <p class="text-xs opacity-70">Last Name</p>
+                    <p class="text-xs">Joh</p>
+                  </div>
+
+                  <div class="space-y-1">
+                    <p class="text-xs opacity-70">Date of Birth</p>
+                    <p class="text-xs">
+                      05 March, 2023
+                      <span class="opacity-50 text-xs">(2 yrs old)</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- **** Cover letter **** -->
+            <div class="p-4">
+              <!-- titre -->
+              <div class="px-2 pt-1 title-cover-letter font-semibold">
+                Cover Letter
+              </div>
+              <div
+                id="cover-l-p"
+                class="p-2 space-y-5 pb-4"
+              >
+                <p class="text-xs leading-5">
+                  With this letter enclosed resume, I would like to express my
+                  sincere interest in ... you have available. As a highly
+                  skilled and successful product development and specialist with
+                  more than 11 years of extensive career experience within the
+                  home... Lorem ipsum dolor sit, amet consectetur adipisicing
+                  elit. Autem corrupti, consequuntur repellat omnis adipisci
+                  aliquid nobis, ipsum.
+                </p>
+                <p class="text-xs leading-5">
+                  My experience lies in successfully conceptualizing... Lorem
+                  ipsum dolor sit, amet consectetur adipisicing elit. Quam sed,
+                  neque magni, obcaecati tenetur totam perspiciatis doloremque
+                  dolore harum placeat consequuntur enim quos veritatis
+                  laudantium officia magnam adipisci...
+                </p>
+                <a
+                  href="#"
+                  class="text-xs text-green-500"
+                  >Read more +</a
+                >
+              </div>
+            </div>
+
+            <!-- Experience -->
+            <div
+              id="experience-bloc"
+              class="p-4 pt-0"
+            >
+              <!-- titre -->
+              <div class="px-2 font-semibold">Experiences</div>
+              <div
+                id="wrapp-education"
+                class="space-y-1 mt-2 p-2 pb-4"
+              >
+                <p class="text-xs">Profession name at..</p>
+                <p class="opacity-60 text-xs">
+                  April 2021 - June 2022 (2 years 3 months)
+                </p>
+              </div>
+            </div>
+
+            <!-- education -->
+            <div class="p-4 pt-0">
+              <!-- titre -->
+              <div class="px-2 font-semibold">Skills</div>
+              <div class="flex flex-wrap gap-2 mt-4">
+                <div class="px-4 py-1 text-xs rounded-full bg-slate-200">
+                  Specialist in
+                </div>
+                <div class="px-4 py-1 text-xs rounded-full bg-slate-200">
+                  lorem lore
+                </div>
+                <div class="px-4 py-1 text-xs rounded-full bg-slate-200">
+                  placeholder
+                </div>
+                <div class="px-4 py-1 text-xs rounded-full bg-slate-200">
+                  placeholde text
+                </div>
+                <div class="px-4 py-1 text-xs rounded-full bg-slate-200">
+                  placeholde
+                </div>
+                <div class="px-4 py-1 text-xs rounded-full bg-slate-200">
+                  placeholdetext
+                </div>
+                <div class="px-4 py-1 text-xs rounded-full bg-slate-200">
+                  placeholder
+                </div>
+                <div class="px-4 py-1 text-xs rounded-full bg-slate-200">
+                  placeholde text
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
