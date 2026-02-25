@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    font-family: 'Manrope', sans-serif;
+}
+/* sidebar */
+.SideBar{
+    background: rgb(7, 7, 7);
+}
+/* Les blocks des journaux */
+.blockRouge{
+    background: #E53935;
+}
+.blockVert{
+    background: #43A047;
+}
+.btn-Ajouter-unité{
+    background: #105bcb;
+}
+
+/* les tableaux des roles */
+.tableTr th{
+    border: solid rgb(76, 75, 75) 1px;
+    /* width: 200px; */
+}
+
+.tableTr td{
+    border: solid rgb(76, 75, 75) 1px;
+    background: rgb(236, 234, 234);
+}
+.btnDelete{
+    background: #E53935;
+    border-radius: 5px;
+}
+.btnEdit{
+    border-radius: 5px;
+    background: #43A047;
+}
+.tableTrPage th{
+    border: solid rgb(76, 75, 75) 1px;
+}
